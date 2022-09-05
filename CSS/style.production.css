@@ -1,0 +1,242 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+p{
+  color:#D68060;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Bree Serif', serif;
+  line-height: 2.8;
+}
+a{
+  font-size: 25px;
+  text-decoration: none;
+}
+a:hover{
+  color:#256D85;
+}
+a:visited{
+  color: #850E35;
+}
+a:active{
+  color: #533483;
+}
+button{
+  font-weight:bolder;
+  color: black;
+  background-color: #FF7C7C;
+}
+button:hover{
+  font-weight:bold;
+  background-color: #a66CFF;
+}
+.btn{
+  border: none;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  opacity: 0.8;
+  -webkit-transition-duration: 2s;
+       -o-transition-duration: 2s;
+          transition-duration: 2s;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.grid-container{
+  display:-ms-grid;
+  display:grid;
+  -ms-grid-columns: 1fr 50px 1fr 50px 1fr 50px 1fr;
+  grid-template-columns: repeat(4,1fr) ;
+  -ms-grid-rows: 150px 50px 150px;
+  grid-template-rows: 150px 150px;
+  grid-gap: 50px;
+  padding: 20px;
+}
+.grid-container > *:nth-child(1){
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.grid-container > *:nth-child(2){
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.grid-container > *:nth-child(3){
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.grid-container > *:nth-child(4){
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.grid-container > *:nth-child(5){
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.grid-container > *:nth-child(6){
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.grid-container > *:nth-child(7){
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.grid-container > *:nth-child(8){
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+.grid-item{
+  background-color: #E1FFEE;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding:70px;
+  font-size: 30px;
+  font-family:'Bree Serif', serif;
+  place-items:center;
+}
+@media all and (max-width: 400px) {
+  .grid-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  h1 {
+    font-size: 13px;
+  }
+}
+@media all and (min-width: 400px) and (max-width: 750px){
+  .grid-container {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+@media all and (min-width: 750px) {
+  .grid-container {
+    -ms-grid-columns:;
+    grid-template-columns:repeat(4 1fr);
+    grid-gap: 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+.home-footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  clear: both;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+
+}
+social-media{
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align:center;
+
+
+}
+.social-media-item{
+  width: 80px;
+
+}
+.header-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding:20px;
+
+}
+.header-item{
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+.header-item:last-child{
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+.navigation-list{
+  list-style-type: none;
+}
+.navigation-list li{
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.navigation-list-item{
+  text-decoration: none;
+}
+.illustration-container{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.illustration{
+  -webkit-animation-name: sky-color;
+          animation-name: sky-color;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+@-webkit-keyframes sky-color{
+  0% {
+    background-color:#A5F1E9;
+  }
+  50% {
+    background-color:#F6F540;
+  }
+  75% {
+    background-color:#F76E11;
+  }
+  100% {
+    background-color:#143F6B;
+  }
+}
+@keyframes sky-color{
+  0% {
+    background-color:#A5F1E9;
+  }
+  50% {
+    background-color:#F6F540;
+  }
+  75% {
+    background-color:#F76E11;
+  }
+  100% {
+    background-color:#143F6B;
+  }
+}
